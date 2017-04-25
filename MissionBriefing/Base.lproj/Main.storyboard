@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOa-Ur-gci">
+                                <rect key="frame" x="37.5" y="28" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-B6-qak">
+                                <rect key="frame" x="37.5" y="66" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5g-CF-q4n">
+                                <rect key="frame" x="166" y="104" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lI-vc-KIq">
+                                <rect key="frame" x="143" y="133" width="88" height="30"/>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authenticateAgent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SY9-QK-zUZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dFB-o4-Hx9">
+                                <rect key="frame" x="37.5" y="171" width="300" height="237"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_inline_nbae15Dmpr1qz6ya8.png" translatesAutoresizingMaskIntoConstraints="NO" id="0uF-01-Gyu">
+                                <rect key="frame" x="37.5" y="416" width="300" height="236.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0uF-01-Gyu" firstAttribute="height" secondItem="dFB-o4-Hx9" secondAttribute="height" id="1N3-2p-XkN"/>
+                            <constraint firstItem="dFB-o4-Hx9" firstAttribute="top" secondItem="2lI-vc-KIq" secondAttribute="bottom" constant="8" id="95V-eE-Scz"/>
+                            <constraint firstItem="2lI-vc-KIq" firstAttribute="top" secondItem="P5g-CF-q4n" secondAttribute="bottom" constant="8" id="Akd-Iz-9bB"/>
+                            <constraint firstItem="dFB-o4-Hx9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.355" id="DD0-Ix-Jxi"/>
+                            <constraint firstItem="vl2-B6-qak" firstAttribute="centerX" secondItem="iOa-Ur-gci" secondAttribute="centerX" id="Eho-eM-4Aw"/>
+                            <constraint firstItem="0uF-01-Gyu" firstAttribute="width" secondItem="dFB-o4-Hx9" secondAttribute="width" id="Nfj-m9-FcK"/>
+                            <constraint firstItem="iOa-Ur-gci" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="PvY-hl-3Lc"/>
+                            <constraint firstItem="dFB-o4-Hx9" firstAttribute="centerX" secondItem="2lI-vc-KIq" secondAttribute="centerX" id="XJ7-uV-TX6"/>
+                            <constraint firstItem="vl2-B6-qak" firstAttribute="height" secondItem="iOa-Ur-gci" secondAttribute="height" id="bES-h7-Pr3"/>
+                            <constraint firstItem="vl2-B6-qak" firstAttribute="width" secondItem="iOa-Ur-gci" secondAttribute="width" id="dBo-3K-vd7"/>
+                            <constraint firstItem="dFB-o4-Hx9" firstAttribute="width" secondItem="vl2-B6-qak" secondAttribute="width" id="fvB-YU-ecJ"/>
+                            <constraint firstItem="P5g-CF-q4n" firstAttribute="top" secondItem="vl2-B6-qak" secondAttribute="bottom" constant="8" id="kKq-BB-zY5"/>
+                            <constraint firstItem="iOa-Ur-gci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pxt-pc-feU"/>
+                            <constraint firstItem="P5g-CF-q4n" firstAttribute="centerX" secondItem="vl2-B6-qak" secondAttribute="centerX" id="qqr-A5-VIP"/>
+                            <constraint firstItem="2lI-vc-KIq" firstAttribute="centerX" secondItem="P5g-CF-q4n" secondAttribute="centerX" id="sSh-eI-U6X"/>
+                            <constraint firstItem="vl2-B6-qak" firstAttribute="top" secondItem="iOa-Ur-gci" secondAttribute="bottom" constant="8" id="uOZ-6m-r0F"/>
+                            <constraint firstItem="iOa-Ur-gci" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vuK-JW-jJM"/>
+                            <constraint firstItem="0uF-01-Gyu" firstAttribute="top" secondItem="dFB-o4-Hx9" secondAttribute="bottom" constant="8" id="wuV-i3-xfv"/>
+                            <constraint firstItem="0uF-01-Gyu" firstAttribute="centerX" secondItem="dFB-o4-Hx9" secondAttribute="centerX" id="xPQ-Ht-umJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="agentUserTextField" destination="iOa-Ur-gci" id="TEo-EM-qFG"/>
+                        <outlet property="briefingTextView" destination="dFB-o4-Hx9" id="PET-dF-3xg"/>
+                        <outlet property="greetingLabel" destination="P5g-CF-q4n" id="If4-1F-cFg"/>
+                        <outlet property="passwordTextField" destination="vl2-B6-qak" id="sSK-ev-jmO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tumblr_inline_nbae15Dmpr1qz6ya8.png" width="500" height="500"/>
+    </resources>
+</document>
